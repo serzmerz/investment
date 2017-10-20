@@ -37,9 +37,9 @@
 }
 
 .wrap-sections {
-    background-size: 100%;
     background: url("../img/Group-31.png") no-repeat;
-    width: 100%;
+    background-position: center;
+    background-size: cover;
     height: 3000px;
 }
 
