@@ -559,6 +559,13 @@ body {
     .nav-header .wrap-link {
         display: none;
     }
+    .login.item .top-phrase, .login.item .bottom-phrase {
+        text-align: center;
+    }
+    .login.item .wrap-item-text {
+        padding-left: 0;
+        border: none;
+    }
 }
 
 .login {
