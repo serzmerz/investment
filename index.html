@@ -2,9 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Title</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/icons/flaticon.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -13,39 +15,561 @@
         <nav class="nav-header">
             <div class="container">
             <div class="wrap-input">
-                <input type="search" value="Поиск">
+                <input type="search" placeholder="Поиск">
+                <i class="flaticon-search"></i>
             </div>
+
+                <div class="toggle_mnu">
+                                <span class="sandwich">
+                                    <span class="sw-topper"></span>
+                                    <span class="sw-bottom"></span>
+                                     <span class="sw-footer"></span>
+                                </span>
+                </div>
             <div class="wrap-link">
-            <a href="#">Вход</a>
-            <a href="#">Регистрация</a>
+            <a href="#"><i class="flaticon-web"></i>Вход</a>
+            <a href="#"><i class="flaticon-key"></i>Регистрация</a>
             </div>
             </div>
         </nav>
     </header>
 
+
     <div class="wrap-sections">
-        <div class="container">
-        <section class="main-section">
-
-            <div class="links">
-                <a href="#">Главная</a>
-                <a href="#">О компании</a>
-                <a href="#">Инвестиционные пакеты</a>
-                <a href="#">Новости</a>
-                <a href="#">Статьи</a>
-                <a href="#">Часто задаваемые вопросы</a>
-                <a href="#">Контакты</a>
-                <a href="#">Личный кабинет</a>
+        <section id="home" class="main-section">
+            <div class="container">
+                <div class="wrap-nav-links">
+                    <div class="row">
+                        <div class="col-md-1 col-sm-12 col-xs-12 wrap-logo">
+                            <img src="img/LOGO.png">
+                        </div>
+                        <div class="col-md-11">
+                            <div class="links hidden">
+                            <a href="#home" class="scrollto">Главная</a>
+                            <a href="#about" class="scrollto">О компании</a>
+                            <a href="#invest" class="scrollto">Инвестиционные пакеты</a>
+                            <a href="#news" class="scrollto">Новости</a>
+                            <a href="#articles" class="scrollto">Статьи</a>
+                            <a href="#faq" class="scrollto">Часто задаваемые вопросы</a>
+                            <a href="#contact" class="scrollto">Контакты</a>
+                            <a href="#">Личный кабинет</a>
+                            <a href="#" class="hidden-sm hidden-md">Вход</a>
+                            <a href="#" class="hidden-sm hidden-md">Регистрация</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-            <div class="wrap-text">
-                <h1>EFFECTIVE INVESTMENT</h1>
-                <p>Оборудывание для майнинга</p>
-                <span>Стабильный доход не зависящий от криптовалют</span>
-                <a href="#" class="button btn-signup">Регистрация</a>
+            <div class="wrap-text-block">
+                <div class="wrap-text">
+                    <h1>EFFECTIVE INVESTMENT</h1>
+                    <img src="img/Shape.png">
+                    <p>ОБОРУДОВАНИЯ ДЛЯ МАЙНИНГА</p>
+                    <span>СТАБИЛЬНЫЙ ДОХОД НЕ ЗАВИСЯЩИЙ ОТ КУРСА КРИПТОВАЛЮТ</span>
+                    <div class="btn-signup">
+                        <a href="#" class="button">РЕГИСТРАЦИЯ</a>
+                    </div>
+                </div>
             </div>
         </section>
+        <section id="about" class="about-section">
+            <div class="container">
+            <div class="row">
+                <div class="col-md-12 wrap-h">
+                    <h2>О компании<img src="img/Rectangle.png"></h2>
+                </div>
+                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                        Sed ut perspiciatis unde omnis iste natus erroеr sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.
+                    </p>
+                </div>
+                <div class="col-md-6 hidden-sm hidden-xs">
+                    <img src="img/house.png" class="img-responsive">
+                </div>
+            </div>
+            </div>
+        </section>
+        <section id="invest" class="package-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 wrap-h">
+                        <h2>Инвестиционные пакеты<img src="img/Rectangle.png"></h2>
+                    </div>
+                    <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                        <div class="wrap-item">
+                            <div class="price">
+                                <p>$7.50</p>
+                                <span>за 1 МН/s</span>
+                            </div>
+                            <p class="name">
+                                ОБЛАЧНЫЙ МАЙНИНГ SCRYPT
+                            </p>
+                            <div class="wrap-property">
+                                <div class="property">
+                                <p class="top-phrase">
+                                    Минимальный Хєштрейт
+                                </p>
+                                <p class="bottom-phrase">
+                                    1 MH/s
+                                </p>
+                                </div>
+                                <div class="property">
+                                    <p class="top-phrase">
+                                        Плата за обслуживание:
+                                    </p>
+                                    <p class="bottom-phrase">
+                                        0.01 $ / 1 MH/s / 24h
+                                    </p>
+                                </div>
+                                <div class="property">
+                                    <p class="top-phrase">
+                                        Минимальный Хєштрейт
+                                    </p>
+                                    <p class="bottom-phrase">
+                                        1 MH/s
+                                    </p>
+                                </div>
+                                <div class="property">
+                                    <p class="top-phrase">
+                                        Минимальный Хєштрейт
+                                    </p>
+                                    <p class="bottom-phrase">
+                                        1 MH/s
+                                    </p>
+                                </div>
+                                <div class="property">
+                                    <p class="top-phrase">
+                                        Автоматические начисления в
+                                    </p>
+                                    <p class="bottom-phrase">
+                                        BTC
+                                    </p>
+                                </div>
+                                <div class="property">
+                                    <p class="top-phrase">
+                                        Минимальный Хєштрейт
+                                    </p>
+                                    <p class="bottom-phrase">
+                                        1 MH/s
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="more">Подробнее о пакете</a>
+                            <a class="button btn-buy">КУПИТЬ</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                        <div class="wrap-item">
+                            <div class="price">
+                                <p>$7.50</p>
+                                <span>за 1 МН/s</span>
+                            </div>
+                            <p class="name">
+                                ОБЛАЧНЫЙ МАЙНИНГ SCRYPT
+                            </p>
+                            <div class="wrap-property">
+                                <div class="property">
+                                    <p class="top-phrase">
+                                        Минимальный Хєштрейт
+                                    </p>
+                                    <p class="bottom-phrase">
+                                        1 MH/s
+                                    </p>
+                                </div>
+                                <div class="property">
+                                    <p class="top-phrase">
+                                        Плата за обслуживание:
+                                    </p>
+                                    <p class="bottom-phrase">
+                                        0.01 $ / 1 MH/s / 24h
+                                    </p>
+                                </div>
+                                <div class="property">
+                                    <p class="top-phrase">
+                                        Минимальный Хєштрейт
+                                    </p>
+                                    <p class="bottom-phrase">
+                                        1 MH/s
+                                    </p>
+                                </div>
+                                <div class="property">
+                                    <p class="top-phrase">
+                                        Минимальный Хєштрейт
+                                    </p>
+                                    <p class="bottom-phrase">
+                                        1 MH/s
+                                    </p>
+                                </div>
+                                <div class="property">
+                                    <p class="top-phrase">
+                                        Автоматические начисления в
+                                    </p>
+                                    <p class="bottom-phrase">
+                                        BTC
+                                    </p>
+                                </div>
+                                <div class="property">
+                                    <p class="top-phrase">
+                                        Минимальный Хєштрейт
+                                    </p>
+                                    <p class="bottom-phrase">
+                                        1 MH/s
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="more">Подробнее о пакете</a>
+                            <a class="button btn-buy">КУПИТЬ</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                        <div class="wrap-item">
+                            <div class="price">
+                                <p>$7.50</p>
+                                <span>за 1 МН/s</span>
+                            </div>
+                            <p class="name">
+                                ОБЛАЧНЫЙ МАЙНИНГ SCRYPT
+                            </p>
+                            <div class="wrap-property">
+                                <div class="property">
+                                    <p class="top-phrase">
+                                        Минимальный Хєштрейт
+                                    </p>
+                                    <p class="bottom-phrase">
+                                        1 MH/s
+                                    </p>
+                                </div>
+                                <div class="property">
+                                    <p class="top-phrase">
+                                        Плата за обслуживание:
+                                    </p>
+                                    <p class="bottom-phrase">
+                                        0.01 $ / 1 MH/s / 24h
+                                    </p>
+                                </div>
+                                <div class="property">
+                                    <p class="top-phrase">
+                                        Минимальный Хєштрейт
+                                    </p>
+                                    <p class="bottom-phrase">
+                                        1 MH/s
+                                    </p>
+                                </div>
+                                <div class="property">
+                                    <p class="top-phrase">
+                                        Минимальный Хєштрейт
+                                    </p>
+                                    <p class="bottom-phrase">
+                                        1 MH/s
+                                    </p>
+                                </div>
+                                <div class="property">
+                                    <p class="top-phrase">
+                                        Автоматические начисления в
+                                    </p>
+                                    <p class="bottom-phrase">
+                                        BTC
+                                    </p>
+                                </div>
+                                <div class="property">
+                                    <p class="top-phrase">
+                                        Минимальный Хєштрейт
+                                    </p>
+                                    <p class="bottom-phrase">
+                                        1 MH/s
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="more">Подробнее о пакете</a>
+                            <a class="button btn-buy">КУПИТЬ</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+                        <div class="wrap-item">
+                            <div class="price">
+                                <p>$7.50</p>
+                                <span>за 1 МН/s</span>
+                            </div>
+                            <p class="name">
+                                ОБЛАЧНЫЙ МАЙНИНГ SCRYPT
+                            </p>
+                            <div class="wrap-property">
+                                <div class="property">
+                                    <p class="top-phrase">
+                                        Минимальный Хєштрейт
+                                    </p>
+                                    <p class="bottom-phrase">
+                                        1 MH/s
+                                    </p>
+                                </div>
+                                <div class="property">
+                                    <p class="top-phrase">
+                                        Плата за обслуживание:
+                                    </p>
+                                    <p class="bottom-phrase">
+                                        0.01 $ / 1 MH/s / 24h
+                                    </p>
+                                </div>
+                                <div class="property">
+                                    <p class="top-phrase">
+                                        Минимальный Хєштрейт
+                                    </p>
+                                    <p class="bottom-phrase">
+                                        1 MH/s
+                                    </p>
+                                </div>
+                                <div class="property">
+                                    <p class="top-phrase">
+                                        Минимальный Хєштрейт
+                                    </p>
+                                    <p class="bottom-phrase">
+                                        1 MH/s
+                                    </p>
+                                </div>
+                                <div class="property">
+                                    <p class="top-phrase">
+                                        Автоматические начисления в
+                                    </p>
+                                    <p class="bottom-phrase">
+                                        BTC
+                                    </p>
+                                </div>
+                                <div class="property">
+                                    <p class="top-phrase">
+                                        Минимальный Хєштрейт
+                                    </p>
+                                    <p class="bottom-phrase">
+                                        1 MH/s
+                                    </p>
+                                </div>
+                            </div>
+                            <a class="more">Подробнее о пакете</a>
+                            <a class="button btn-buy">КУПИТЬ</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="news" class="news-section">
+            <div id="articles" class="container">
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12 wrap-h">
+                        <h2>Новости, статьи<img src="img/Rectangle.png"></h2>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="name">
+                            <p><i class="flaticon-social-media"></i> Новости</p>
+                            <div class="wrap-slider-links">
+                                <a  class="prev-slide1"><i class="flaticon-arrows-3"></i></a>
+                                <a  class="next-slide1"><i class="flaticon-arrows-2"></i></a>
+                            </div>
+                        </div>
+                        <div class="body">
+                            <!-- HTML код карусели -->
+                            <div class="examplecarusel">
+                                <div id="myCarousel1" class="carousel slide" data-interval="3000" data-ride="carousel">
+                                    <!-- Слайды карусели -->
+                                    <div class="carousel-inner">
+                                        <!-- 1 слайд -->
+                                        <div class="active item">
+                                            <div class="wrap-title">
+                                                <p class="title">Революция в криптовалютном мире</p>
+                                                <p class="date">04.12.1743</p>
+                                            </div>
+                                            <div class="wrap-body-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="wrap-title">
+                                                <p class="title">Революция в криптовалютном мире</p>
+                                                <p class="date">04.12.1743</p>
+                                            </div>
+                                            <div class="wrap-body-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                            </div>
+                                        </div>
+                                        <div class="item">
+                                            <div class="wrap-title">
+                                                <p class="title">Революция в криптовалютном мире</p>
+                                                <p class="date">04.12.1743</p>
+                                            </div>
+                                            <div class="wrap-body-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <a class="button btn-more-news">Больше новостей</a>
+                    </div>
+                    </div>
+                    <div class="col-md-6 col-sm-12 col-xs-12">
+                        <div class="name">
+                            <p><i class="flaticon-travel"></i> Статьи</p>
+                            <div class="wrap-slider-links">
+                                <a class="prev-slide"><i class="flaticon-arrows-3"></i></a>
+                                <a class="next-slide"><i class="flaticon-arrows-2"></i></a>
+                            </div>
+                        </div>
+                        <div class="body">
+
+                        <!-- HTML код карусели -->
+                        <div class="examplecarusel">
+                            <div id="myCarousel2" class="carousel slide" data-interval="3000" data-ride="carousel">
+                                <!-- Слайды карусели -->
+                                <div class="carousel-inner">
+                                    <!-- 1 слайд -->
+                                    <div class="active item">
+                                            <div class="wrap-title">
+                                                <p class="title">Революция в криптовалютном мире</p>
+                                                <p class="date">04.12.1743</p>
+                                            </div>
+                                            <div class="wrap-body-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                            </div>
+                                    </div>
+                                    <div class="item">
+                                            <div class="wrap-title">
+                                                <p class="title">Революция в криптовалютном мире</p>
+                                                <p class="date">04.12.1743</p>
+                                            </div>
+                                            <div class="wrap-body-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                            </div>
+                                    </div>
+                                    <div class="item">
+                                            <div class="wrap-title">
+                                                <p class="title">Революция в криптовалютном мире</p>
+                                                <p class="date">04.12.1743</p>
+                                            </div>
+                                            <div class="wrap-body-text">
+                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        </div>
+                        <a class="button btn-more-news">Больше новостей</a>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="question-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 wrap-h">
+                        <h2>Часто задаваемые вопросы<img src="img/Rectangle.png"></h2>
+                    </div>
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="panel-group" id="accordion">
+                            <div class="panel panel-default">
+                                <div class="panel-heading active">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne">
+                                            Пункт Группы Свертывания #1
+                                        </a>
+                                        <span class="wrap-arrow"><i class="flaticon-arrows"></i></span>
+                                    </h4>
+                                </div>
+                                <div id="collapseOne" class="panel-collapse collapse in">
+                                    <div class="panel-body">
+                                        <div class="wrap-accordion-text">
+                                            <h4>DMCA - Frequently Asked Questions.</h4>
+                                            <p class="description">We’ve put together a few frequently asked questions about DMCAs and what they might mean for you. Our approach to DMCAs and the process we follow is outlined in our Content Policy (please read that first).</p>
+                                            <p class="text">The first section below deals with questions around lodging a DMCA and the second section is about what to do when you receive a DMCA. If after considering the Content Policy and the FAQs below and you’re still unsure about anything, please contact support.</p>
+                                            <p class="text">The first section below deals with questions around lodging a DMCA and the second section is about what to do when you receive a DMCA. If after considering the Content Policy and the FAQs below and you’re still unsure about anything, please contact support.</p>
+                                            <p class="text">The first section below deals with questions around lodging a DMCA and the second section is about what to do when you receive a DMCA. If after considering the Content Policy and the FAQs below and you’re still unsure about anything, please contact support.</p>
+                                            <img src="img/Layer-6.png" class="img-responsive">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
+                                            Пункт Группы Свертывания #2
+                                        </a>
+                                        <span class="wrap-arrow"><i class="flaticon-arrows-1"></i></span>
+                                    </h4>
+                                </div>
+                                <div id="collapseTwo" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4 class="panel-title">
+                                        <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
+                                            Пункт Группы Свертывания #3
+                                        </a>
+                                        <span class="wrap-arrow"><i class="flaticon-arrows-1"></i></span>
+                                    </h4>
+                                </div>
+                                <div id="collapseThree" class="panel-collapse collapse">
+                                    <div class="panel-body">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer id="contact" class="footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <img src="img/LOGO1.png">
+                        <p><i class="flaticon-interface"></i> effectiveinvestment@gmail.com</p>
+                        <p><i class="flaticon-pin"></i> 625 Godwin Ave, Midland Park, NJ 07432</p>
+                        <p><i class="flaticon-telephone"></i> +1 271-789-3412</p>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <a href="#home" class="scrollto">Главная</a>
+                        <a href="#about" class="scrollto">О компании</a>
+                        <a href="#invest" class="scrollto">Инвестиционные пакеты</a>
+                        <a href="#news" class="scrollto">Новости</a>
+                    </div>
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <a href="#articles" class="scrollto">Статьи</a>
+                        <a href="#faq" class="scrollto">Часто задаваемые вопросы</a>
+                        <a href="#" class="scrollto">Контакты</a>
+                        <a href="#">Личный кабинет</a>
+                        <div class="wrap-social-media">
+                        <div class="wrap-social">
+                        <i class="flaticon-social"></i>
+                        </div>
+                        <div class="wrap-social item-2">
+                        <i class="flaticon-social-1"></i>
+                        </div>
+                        <div class="wrap-social item-3">
+                        <i class="flaticon-video"></i>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+        </footer>
+        <div class="after-footer">
+            <p>Copyright © 2017 Effective Investment. All rights reserved</p>
+        </div>
     </div>
     </div>
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+    <script src="js/PageScroll2id.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
