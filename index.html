@@ -27,13 +27,69 @@
                                 </span>
                 </div>
             <div class="wrap-link">
-            <a href="#"><i class="flaticon-web"></i>Вход</a>
-            <a href="#"><i class="flaticon-key"></i>Регистрация</a>
+            <a href="#" data-toggle="modal" data-target="#login"><i class="flaticon-web"></i>Вход</a>
+            <a href="#" data-toggle="modal" data-target="#register"><i class="flaticon-key"></i>Регистрация</a>
             </div>
             </div>
         </nav>
     </header>
-
+    <!-- Modal -->
+    <div class="modal fade login" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4>АВТОРИЗАЦИЯ</h4>
+                    <p>Введите свои персональные данные</p>
+                    <div class="wrap-input">
+                        <input type="email" placeholder="Email">
+                        <input type="text" placeholder="Пароль">
+                        <a href="#" data-toggle="modal" data-target="#remember-login" class="left">Забыли пароль?</a>
+                        <a href="#">Зарегистрироваться</a>
+                    </div>
+                    <a class="button btn-login">ВОЙТИ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade login" id="register" tabindex="-1" role="dialog" aria-labelledby="register" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4>РЕГИСТРАЦИЯ</h4>
+                    <p>Введите свои персональные данные</p>
+                    <div class="wrap-input">
+                        <input type="email" placeholder="Email">
+                        <input type="text" placeholder="Пароль(Минимум 12 символов включая заглавные буквы)">
+                        <input type="text" placeholder="Повторите пароль">
+                        <a href="#" data-toggle="modal" data-target="#remember-login" class="left">Забыли пароль?</a>
+                        <a href="#">Зарегистрироваться</a>
+                    </div>
+                    <a class="button btn-login">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Modal -->
+    <div class="modal fade login" id="remember-login" tabindex="-1" role="dialog" aria-labelledby="remember-login" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <h4>ВОСТАНОВЛЕНИЕ ПАРОЛЯ</h4>
+                    <p>Пожалуйста введите вашу почту</p>
+                    <div class="wrap-input">
+                        <input type="email" placeholder="Email">
+                        <a href="#" class="left">Забыли пароль?</a>
+                        <a href="#">Зарегистрироваться</a>
+                    </div>
+                    <a class="button btn-login">ОТПРАВИТЬ</a>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <div class="wrap-sections">
         <section id="home" class="main-section">
@@ -155,8 +211,79 @@
                                     </p>
                                 </div>
                             </div>
-                            <a class="more">Подробнее о пакете</a>
+                            <a class="more" data-toggle="modal" data-target="#item1">Подробнее о пакете</a>
                             <a class="button btn-buy">КУПИТЬ</a>
+                        </div>
+                        <!-- Modal -->
+                        <div class="modal fade login item" id="item1" tabindex="-1" role="dialog" aria-labelledby="item1" aria-hidden="true">
+                            <div class="modal-dialog modal-lg">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                        <h4>ОБЛАЧНЫЙ МАЙНИНГ</h4>
+                                        <p class="text-center">Подробное описание пакета</p>
+                                        <div class="container-fluid">
+                                            <div class="row">
+                                                <div class="col-md-3">
+                                                    <div class="wrap-property">
+                                                        <div class="property">
+                                                            <p class="top-phrase">
+                                                                Минимальный Хєштрейт
+                                                            </p>
+                                                            <p class="bottom-phrase">
+                                                                1 MH/s
+                                                            </p>
+                                                        </div>
+                                                        <div class="property">
+                                                            <p class="top-phrase">
+                                                                Плата за обслуживание:
+                                                            </p>
+                                                            <p class="bottom-phrase">
+                                                                0.01 $ / 1 MH/s / 24h
+                                                            </p>
+                                                        </div>
+                                                        <div class="property">
+                                                            <p class="top-phrase">
+                                                                Минимальный Хєштрейт
+                                                            </p>
+                                                            <p class="bottom-phrase">
+                                                                1 MH/s
+                                                            </p>
+                                                        </div>
+                                                        <div class="property">
+                                                            <p class="top-phrase">
+                                                                Минимальный Хєштрейт
+                                                            </p>
+                                                            <p class="bottom-phrase">
+                                                                1 MH/s
+                                                            </p>
+                                                        </div>
+                                                        <div class="property">
+                                                            <p class="top-phrase">
+                                                                Автоматические начисления в
+                                                            </p>
+                                                            <p class="bottom-phrase">
+                                                                BTC
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-9">
+                                                    <div class="wrap-item-text">
+                                                    <p class="prop">Преимущества пакета:</p>
+                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+                                                    <p class="prop">Преимущества пакета:</p>
+                                                    <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. </p>
+                                                    <p class="prop">Преимущества пакета:</p>
+                                                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem error sit voluptatem accusantium doloremque laudantium, totam rem error sit voluptatem accusantium doloremque laudantium, totam rem</p>
+                                                    </div>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <a class="button btn-login">КУПИТЬ</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
