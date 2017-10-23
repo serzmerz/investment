@@ -110,6 +110,7 @@ body {
     right: 10px;
     top: 12px;
     color: #017b9b;
+    cursor: pointer;
 }
 .nav-header input {
     border-radius: 25px;
