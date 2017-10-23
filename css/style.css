@@ -515,7 +515,7 @@ body {
         top: -50px;
         left: 0;
         display: block;
-        width: 100%;
+        width: 110%;
         background-color: #001C26;
         z-index: 969;
         padding: 50px;
@@ -523,6 +523,8 @@ body {
         overflow-y: scroll;
         max-height: 450px;
         height: 100%;
+        margin-right: -15px;
+
     }
     .links a {
         display: block;
