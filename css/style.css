@@ -315,6 +315,7 @@ body {
     font-size: 14px;
     text-decoration: underline;
     color: #0eb09b;
+    cursor: pointer;
 }
 .btn-buy {
     display: block;
@@ -398,7 +399,8 @@ body {
 .question-section .panel-title > a {
     text-decoration: none;
     padding: 10px 15px;
-    display: inline-block;
+    display: block;
+    position: relative;
 }
 .question-section {
     padding-top: 120px;
@@ -413,7 +415,9 @@ body {
     border-top: 1px solid #eceef0;
 }
 .wrap-arrow {
-    float: right;
+    position: absolute;
+    right: 0;
+    top: 0;
     border-left: 1px solid #eceef0;
 
     padding: 10px 8px 10px 0;
@@ -601,7 +605,9 @@ body {
     width: 100%;
 }
 .login .btn-login {
-    display: inline-block;
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
 }
 .login .wrap-input a.left {
     float: left;

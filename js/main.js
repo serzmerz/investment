@@ -26,13 +26,13 @@ $(document).ready(function(){
         $("#myCarousel1").carousel('next');
     });
     $('#accordion').on('shown.bs.collapse', function (e) {
-        var elem = e.target.previousElementSibling.firstElementChild.lastElementChild.firstElementChild;
+        var elem = e.target.previousElementSibling.firstElementChild.lastElementChild.firstElementChild.firstElementChild;
         elem.className = 'flaticon-arrows';
         var panelHeading = e.target.previousElementSibling;
         panelHeading.classList.add('active');
     });
     $('#accordion').on('hidden.bs.collapse', function (e) {
-        var elem = e.target.previousElementSibling.firstElementChild.lastElementChild.firstElementChild;
+        var elem = e.target.previousElementSibling.firstElementChild.lastElementChild.firstElementChild.firstElementChild;
         elem.className = 'flaticon-arrows-1';
         var panelHeading = e.target.previousElementSibling;
         panelHeading.classList.remove('active');
