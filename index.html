@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="fonts/icons/flaticon.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -14,7 +15,7 @@
     <header>
         <nav class="nav-header">
             <div class="container">
-            <div class="wrap-input">
+            <div class="wrap-input animated bounce">
                 <input type="search" placeholder="Поиск">
                 <i class="flaticon-search"></i>
             </div>
@@ -26,7 +27,7 @@
                                      <span class="sw-footer"></span>
                                 </span>
                 </div>
-            <div class="wrap-link">
+            <div class="wrap-link animated bounce">
             <a href="#" data-toggle="modal" data-target="#login"><i class="flaticon-web"></i>Вход</a>
             <a href="#" data-toggle="modal" data-target="#register"><i class="flaticon-key"></i>Регистрация</a>
             </div>
@@ -94,7 +95,7 @@
     <div class="wrap-sections">
         <section id="home" class="main-section">
             <div class="container">
-                <div class="wrap-nav-links">
+                <div class="wrap-nav-links animated fadeIn">
                     <div class="row">
                         <div class="col-md-1 col-sm-12 col-xs-12 wrap-logo">
                             <img src="img/LOGO.png">
@@ -116,7 +117,7 @@
                     </div>
                 </div>
             </div>
-            <div class="wrap-text-block">
+            <div class="wrap-text-block animated fadeIn">
                 <div class="wrap-text">
                     <h1>EFFECTIVE INVESTMENT</h1>
                     <img src="img/Shape.png">
@@ -149,7 +150,7 @@
         <section id="invest" class="package-section">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-12 wrap-h">
+                    <div class="col-md-12 wrap-h ">
                         <h2>Инвестиционные пакеты<img src="img/Rectangle.png"></h2>
                     </div>
                     <div class="col-md-3 col-md-offset-0 col-sm-6 col-sm-offset-0 col-xs-8 col-xs-offset-2">
@@ -484,7 +485,7 @@
                     <div class="col-md-12 col-sm-12 col-xs-12 wrap-h">
                         <h2>Новости, статьи<img src="img/Rectangle.png"></h2>
                     </div>
-                    <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div id="left-news" class="col-md-6 col-sm-12 col-xs-12">
                         <div class="name">
                             <p><i class="flaticon-social-media"></i> Новости</p>
                             <div class="wrap-slider-links">
@@ -532,7 +533,7 @@
                         <a class="button btn-more-news">Больше новостей</a>
                     </div>
                     </div>
-                    <div class="col-md-6 col-sm-12 col-xs-12">
+                    <div id="right-news" class="col-md-6 col-sm-12 col-xs-12">
                         <div class="name">
                             <p><i class="flaticon-travel"></i> Статьи</p>
                             <div class="wrap-slider-links">
@@ -676,15 +677,15 @@
                         <a href="#" class="scrollto">Контакты</a>
                         <a href="#">Личный кабинет</a>
                         <div class="wrap-social-media">
-                        <div class="wrap-social">
+                        <a href="#" class="wrap-social">
                         <i class="flaticon-social"></i>
-                        </div>
-                        <div class="wrap-social item-2">
+                        </a>
+                        <a href="#" class="wrap-social item-2">
                         <i class="flaticon-social-1"></i>
-                        </div>
-                        <div class="wrap-social item-3">
+                        </a>
+                        <a href="#" class="wrap-social item-3">
                         <i class="flaticon-video"></i>
-                        </div>
+                        </a>
                         </div>
                     </div>
                     </div>
@@ -695,7 +696,9 @@
         </div>
     </div>
     </div>
-<script src="js/jquery-3.2.1.min.js"></script>
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/animate.css.js"></script>
+<script src="js/waypoints.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
     <script src="js/PageScroll2id.min.js"></script>
 <script src="js/main.js"></script>

@@ -160,9 +160,11 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    animation-duration: 3s;
 }
 .wrap-nav-links {
     margin-top: 90px;
+    animation-duration: 3s;
 }
 .links {
     display: flex;

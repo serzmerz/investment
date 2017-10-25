@@ -1,4 +1,12 @@
 $(document).ready(function(){
+
+    $(".wrap-h h2").animated("fadeInUp", "fadeOutDown");
+    $(".about-section p").animated("fadeInUp", "fadeOutDown");
+    $(".about-section img").animated("fadeInUp", "fadeOutDown");
+    $(".package-section .wrap-item").animated("fadeIn", "fadeOut");
+    $("#left-news").animated("fadeInUp", "fadeOutDown");
+    $("#right-news").animated("fadeInUp", "fadeOutDown");
+    $("#accordion").animated("fadeInUp", "fadeOutDown");
     // Инициализирует карусель
     $(".start-slide").click(function(){
         $("#myCarousel2").carousel('cycle');
