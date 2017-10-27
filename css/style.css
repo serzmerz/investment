@@ -672,3 +672,23 @@ body {
     padding-left: 50px;
     padding-right: 50px;
 }
+
+.totop {
+    position: fixed;
+    right: 25px;
+    bottom: 15px;
+    width: 60px;
+    height: 60px;
+    background-color: #017b9b;
+    box-shadow: 0 1px 7px rgba(0, 0, 0, .6);
+    border-radius: 50%;
+    -webkit-transition: -webkit-all 0.5s, linear 0.2s;
+    transition: all 0.5s, linear 0.2s;
+    z-index: 2;
+}
+.totop img {
+    width: 34px;
+    margin-top: 12px;
+    margin-left: 12.5px;
+    transform: rotate(180deg);
+}

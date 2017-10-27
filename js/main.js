@@ -6,7 +6,7 @@ $(document).ready(function(){
     $(".package-section .wrap-item").animated("fadeIn", "fadeOut");
     $("#left-news").animated("fadeInUp", "fadeOutDown");
     $("#right-news").animated("fadeInUp", "fadeOutDown");
-    $("#accordion").animated("fadeInUp", "fadeOutDown");
+    $("#accordion").animated("fadeIn", "fadeOut");
     // Инициализирует карусель
     $(".start-slide").click(function(){
         $("#myCarousel2").carousel('cycle');
@@ -60,5 +60,23 @@ $(document).ready(function(){
         destination = jQuery(elementClick).offset().top;
         jQuery("html:not(:animated),body:not(:animated)").animate({scrollTop: destination}, 1100);
         return false;
+    });
+    jQuery(document).ready(function () {
+        jQuery("#back-top").hide();
+        jQuery(function () {
+            jQuery(window).scroll(function () {
+                if (jQuery(this).scrollTop() > 300) {
+                    jQuery('#back-top').fadeIn()
+                } else {
+                    jQuery('#back-top').fadeOut()
+                }
+            });
+            jQuery('#back-top a').click(function () {
+                jQuery('body,html').animate({
+                    scrollTop: 0
+                }, 800);
+                return false
+            })
+        })
     });
 });
