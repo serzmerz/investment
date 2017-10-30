@@ -172,6 +172,8 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-left: 50px;
+
+    z-index: 999999;
 }
 .links.hidden {
     display: flex !important;
@@ -246,7 +248,7 @@ body {
 
 .about-section {
     padding-top: 50px;
-    background: url("../img/Main-1170-Recovered_04.png") 100% 100% no-repeat;
+    background: url("../img/Main-1170-Recovered_04.png") center center no-repeat;
     background-size: cover;
 }
 .about-section p {
@@ -258,7 +260,7 @@ body {
 .package-section {
     padding-top: 70px;
     text-align: center;
-    background: url("../img/Main-1170-Recovered_05.png") 100% 100% no-repeat;
+    background: url("../img/Main-1170-Recovered_05.png") center center no-repeat;
     background-size: cover;
 }
 
@@ -334,7 +336,7 @@ body {
 .news-section {
     margin-top: -65px;
     color: black;
-    background: url("../img/Main-1170-Recovered_06.png") 100% 100% no-repeat;
+    background: url("../img/Main-1170-Recovered_06.png") center center no-repeat;
     background-size: cover;
 }
 .news-section .name {
@@ -408,7 +410,7 @@ body {
 .question-section {
     padding-top: 120px;
     color: black;
-    background: url("../img/Main-1170-Recovered_06.png") 100% 100% no-repeat;
+    background: url("../img/Main-1170-Recovered_06.png") center center no-repeat;
     background-size: cover;
 }
 .question-section .panel-heading {
@@ -510,6 +512,12 @@ body {
 @media screen and (max-width: 1200px) {
     .toggle_mnu {
         display: inline-block;
+        float: right;
+        margin-right: 50px;
+        margin-top: 32px;
+    }
+    .nav-header .wrap-link {
+        display: none;
     }
     .links.hidden {
         display: none !important;
@@ -519,18 +527,19 @@ body {
     }
     .links {
         position: fixed;
+        z-index: 969;
         top: -50px;
         left: 0;
         display: block;
         width: 110%;
         background-color: #001C26;
-        z-index: 969;
         padding: 50px;
         margin-top: 50px;
         overflow-y: scroll;
         max-height: 450px;
         height: 100%;
         margin-right: -15px;
+        opacity: 1;
 
     }
     .links a {
@@ -569,15 +578,15 @@ body {
     .wrap-text h1 {
         font-size: 50px;
     }
-    .nav-header .wrap-link {
-        display: none;
-    }
     .login.item .top-phrase, .login.item .bottom-phrase {
         text-align: center;
     }
     .login.item .wrap-item-text {
         padding-left: 0;
         border: none;
+    }
+    .wrap-h img {
+        display: none;
     }
 }
 
@@ -691,4 +700,11 @@ body {
     margin-top: 12px;
     margin-left: 12.5px;
     transform: rotate(180deg);
+}
+
+@media (max-width: 460px) {
+    .news-section .wrap-title .date {
+        float: none;
+        display: block;
+    }
 }

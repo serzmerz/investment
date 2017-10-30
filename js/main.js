@@ -1,12 +1,11 @@
 $(document).ready(function(){
 
     $(".wrap-h h2").animated("fadeInUp", "fadeOutDown");
-    $(".about-section p").animated("fadeInUp", "fadeOutDown");
-    $(".about-section img").animated("fadeInUp", "fadeOutDown");
+    $(".about-section .container").animated("fadeIn", "fadeOut");
+    $(".wrap-text-block").animated("fadeIn", "fadeOut");
     $(".package-section .wrap-item").animated("fadeIn", "fadeOut");
-    $("#left-news").animated("fadeInUp", "fadeOutDown");
-    $("#right-news").animated("fadeInUp", "fadeOutDown");
-    $("#accordion").animated("fadeIn", "fadeOut");
+    $("#left-news").animated("fadeIn", "fadeOut");
+    $("#right-news").animated("fadeIn", "fadeOut");
     // Инициализирует карусель
     $(".start-slide").click(function(){
         $("#myCarousel2").carousel('cycle');
