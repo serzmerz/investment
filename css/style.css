@@ -1,10 +1,14 @@
 @font-face {
     font-family: Lato; /* Имя шрифта */
-    src: url(../fonts/lato.ttf); /* Путь к файлу со шрифтом */
+    src: url(../fonts/Lato-Regular.ttf); /* Путь к файлу со шрифтом */
 }
 @font-face {
     font-family: LatoBlack; /* Имя шрифта */
     src: url(../fonts/Lato-Black.ttf); /* Путь к файлу со шрифтом */
+}
+@font-face {
+    font-family: LatoBold; /* Имя шрифта */
+    src: url(../fonts/Lato-Bold.ttf); /* Путь к файлу со шрифтом */
 }
 
 /*Иконка меню---------------*/
@@ -131,7 +135,7 @@ body {
 
 .nav-header .wrap-link a {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 15px;
     color: white;
     font-weight: 600;
     font-size: 14px;
@@ -144,6 +148,7 @@ body {
 .nav-header .wrap-link i {
     color: #03ffde;
     margin-right: 10px;
+    font-size: 18px;
 }
 .wrap-sections {
     width: 100%;
@@ -152,7 +157,7 @@ body {
 .main-section {
     height: 100vh;
     min-height: 560px;
-    background: url("../img/Main-1170-Recovered_02.png") center center no-repeat;
+    background: url("../img/Main-1170-Recovered_02.png") center bottom no-repeat;
     background-size: cover;
 }
 .main-section .wrap-text-block {
@@ -216,6 +221,7 @@ body {
     font-size: 16px;
 }
 .button {
+    font-family: LatoBold;
     color: black;
     background-color: #03ffde;
     padding: 12px 60px;
@@ -223,6 +229,7 @@ body {
     text-decoration: none;
     box-shadow: 0 7px 20px rgba(0,0,0,0.5);
     text-align: center;
+    letter-spacing: 1px;
 }
 .button:hover {
     text-decoration: none;
@@ -283,8 +290,8 @@ body {
     padding-top: 30px;
 }
 .package-section .price p {
+    font-family: LatoBlack;
     font-size: 23px;
-    font-weight: bold;
     margin-bottom: 5px;
 }
 
@@ -293,7 +300,7 @@ body {
 }
 
 .package-section .name {
-    font-weight: 600;
+    font-family: LatoBlack;
     font-size: 18px;
     line-height: 1.3em;
 }
@@ -476,6 +483,7 @@ body {
 }
 .footer-section i {
     color: #03ffde;
+    font-size: 18px;
 }
 .footer-section p {
     font-size: 16px;
@@ -484,7 +492,12 @@ body {
     display: inline-block;
 }
 .wrap-social-media {
+    margin-top: 5px;
     position: relative;
+}
+.wrap-social-media i {
+    font-size: 20px;
+    margin-left: 5px;
 }
 .footer-section .item-3 {
     position: absolute;
@@ -701,6 +714,9 @@ body {
     margin-left: 12.5px;
     transform: rotate(180deg);
 }
+.news-section .button {
+    letter-spacing: 0;
+}
 
 @media (max-width: 460px) {
     .news-section .wrap-title .date {
@@ -708,3 +724,4 @@ body {
         display: block;
     }
 }
+

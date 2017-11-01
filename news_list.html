@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="fonts/icons/flaticon.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/news-style.css">
+</head>
+<body>
+
+<header>
+    <nav class="nav-header">
+        <div class="container">
+            <div class="wrap-input animated bounce">
+                <input type="search" placeholder="Поиск">
+                <i class="flaticon-search"></i>
+            </div>
+
+            <div class="toggle_mnu">
+                                <span class="sandwich">
+                                    <span class="sw-topper"></span>
+                                    <span class="sw-bottom"></span>
+                                     <span class="sw-footer"></span>
+                                </span>
+            </div>
+            <div class="wrap-link animated bounce">
+                <a href="#" data-toggle="modal" data-target="#login"><i class="flaticon-web"></i>Вход</a>
+                <a href="#" data-toggle="modal" data-target="#register"><i class="flaticon-key"></i>Регистрация</a>
+            </div>
+        </div>
+    </nav>
+</header>
+<!-- Modal -->
+<div class="modal fade login" id="login" tabindex="-1" role="dialog" aria-labelledby="login" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4>АВТОРИЗАЦИЯ</h4>
+                <p>Введите свои персональные данные</p>
+                <div class="wrap-input">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Пароль">
+                    <a href="#" data-toggle="modal" data-target="#remember-login" class="left">Забыли пароль?</a>
+                    <a href="#">Зарегистрироваться</a>
+                </div>
+                <a class="button btn-login">ВОЙТИ</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Modal -->
+<div class="modal fade login" id="register" tabindex="-1" role="dialog" aria-labelledby="register" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-body">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                <h4>РЕГИСТРАЦИЯ</h4>
+                <p>Введите свои персональные данные</p>
+                <div class="wrap-input">
+                    <input type="email" placeholder="Email">
+                    <input type="text" placeholder="Пароль(Минимум 12 символов включая заглавные буквы)">
+                    <input type="text" placeholder="Повторите пароль">
+                    <a href="#" data-toggle="modal" data-target="#remember-login" class="left">Забыли пароль?</a>
+                    <a href="#">Войти</a>
+                </div>
+                <a class="button btn-login">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section class="wrap-nav-section">
+    <div class="container">
+        <div class="wrap-nav-links">
+            <div class="row">
+                <div class="col-md-1 col-sm-12 col-xs-12 wrap-logo">
+                    <img src="img/LOGO-black.png">
+                </div>
+                <div class="col-md-11">
+                    <div class="links hidden">
+                        <a href="#home" class="scrollto">Главная</a>
+                        <a href="#about" class="scrollto">О компании</a>
+                        <a href="#invest" class="scrollto">Инвестиционные пакеты</a>
+                        <a href="news_list.html" class="scrollto active">Новости</a>
+                        <a href="#articles" class="scrollto">Статьи</a>
+                        <a href="#faq" class="scrollto">Часто задаваемые вопросы</a>
+                        <a href="#contact" class="scrollto">Контакты</a>
+                        <a href="#" class="scrollto">Личный кабинет</a>
+                        <a href="#" class="hidden-lg">Вход</a>
+                        <a href="#" class="hidden-lg">Регистрация</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="wrap-news-items">
+    <div class="container">
+        <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li class="active">Data</li>
+        </ol>
+        <div class="news-item">
+            <img class="img-responsive" src="img/news-item.png">
+            <div class="content">
+                <h3>Шведские власти впервые взыскали долг в биткоинах</h3>
+                <div class="date-text"><span>Размещено: 14.10.2017 15:35</span></div>
+                <p class="body-news">In varius varius justo, eget ultrices mauris rhoncus non. Morbi tristique, mauris eu imperdiet bibendum, velit diam iaculis velit, in ornare massa enim at lorem. Etiam risus diam, porttitor vitae ultrices quis, dapibus id dolor. Morbi venenatis lacinia rhoncus. Pellentesque non bibendum tellus, vitae semper sem. Morbi nec porta sem, eget egestas leo.</p>
+            </div>
+            <a class="read-more">Читать полностью</a>
+        </div>
+    </div>
+</section>
+
+<footer id="contact" class="footer-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <img src="img/LOGO1.png">
+                <p><i class="flaticon-interface"></i> effectiveinvestment@gmail.com</p>
+                <p><i class="flaticon-pin"></i> 625 Godwin Ave, Midland Park, NJ 07432</p>
+                <p><i class="flaticon-telephone"></i> +1 271-789-3412</p>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <a href="#home" class="scrollto">Главная</a>
+                <a href="#about" class="scrollto">О компании</a>
+                <a href="#invest" class="scrollto">Инвестиционные пакеты</a>
+                <a href="#news" class="scrollto">Новости</a>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+                <a href="#articles" class="scrollto">Статьи</a>
+                <a href="#faq" class="scrollto">Часто задаваемые вопросы</a>
+                <a href="#" class="scrollto">Контакты</a>
+                <a href="#">Личный кабинет</a>
+                <div class="wrap-social-media">
+                    <a href="#" class="wrap-social">
+                        <i class="flaticon-social"></i>
+                    </a>
+                    <a href="#" class="wrap-social item-2">
+                        <i class="flaticon-social-1"></i>
+                    </a>
+                    <a href="#" class="wrap-social item-3">
+                        <i class="flaticon-video"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="after-footer">
+    <p>Copyright © 2017 Effective Investment. All rights reserved</p>
+</div>
+</div>
+</div>
+<script src="js/jquery-2.1.3.min.js"></script>
+<script src="js/animate.css.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/PageScroll2id.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

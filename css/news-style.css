@@ -1,0 +1,37 @@
+@font-face {
+    font-family: FontAwesome; /* Имя шрифта */
+    src: url(../fonts/fontawesome-webfont.ttf); /* Путь к файлу со шрифтом */
+}
+
+.wrap-nav-section .links a.active {
+    color: black;
+    font-weight: 600;
+}
+.wrap-nav-section .links a:hover {
+    color: black;
+    font-weight: 600;
+}
+.wrap-nav-section .wrap-nav-links {
+    padding-bottom: 30px;
+    border-bottom: 1px solid black;
+    margin-bottom: 40px;
+}
+
+.wrap-news-items .breadcrumb>li+li:before {
+    content: '\f105';
+    font-family: FontAwesome;
+    font-weight: 300;
+    font-size: 12px;
+}
+.wrap-news-items .breadcrumb {
+    background: transparent;
+    padding-left: 0;
+}
+.wrap-news-items .breadcrumb li a {
+    color: #878787;
+}
+
+.wrap-news-items .breadcrumb li.active {
+    color: black;
+    font-weight: 300;
+}
