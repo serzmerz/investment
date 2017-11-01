@@ -446,6 +446,7 @@ body {
 }
 
 .wrap-accordion-text h4 {
+    font-family: LatoBold;
     font-size: 30px;
     color: #001620;
 }
