@@ -157,7 +157,7 @@ body {
 .main-section {
     height: 100vh;
     min-height: 560px;
-    background: url("../img/Main-1170-Recovered_02.png") center bottom no-repeat;
+    background: url("../img/bg-1.png") center bottom no-repeat;
     background-size: cover;
 }
 .main-section .wrap-text-block {
@@ -254,8 +254,8 @@ body {
 }
 
 .about-section {
-    padding-top: 50px;
-    background: url("../img/Main-1170-Recovered_04.png") center center no-repeat;
+    padding-top: 100px;
+    background: url("../img/bg-2-1.png") center center no-repeat;
     background-size: cover;
 }
 .about-section p {
@@ -265,9 +265,9 @@ body {
 }
 
 .package-section {
-    padding-top: 70px;
+    padding-top: 130px;
     text-align: center;
-    background: url("../img/Main-1170-Recovered_05.png") center center no-repeat;
+    background: url("../img/bg-3-1.png") center bottom no-repeat;
     background-size: cover;
 }
 
@@ -277,7 +277,7 @@ body {
     border-radius: 10px;
     box-shadow: 0 7px 20px rgba(0,0,0,0.5);
     padding: 25px;
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 .package-section .price {
     background-color: #03ffde;
@@ -341,10 +341,33 @@ body {
     margin-top: 0;
 }
 .news-section {
-    margin-top: -65px;
+    padding-top: 70px;
     color: black;
-    background: url("../img/Main-1170-Recovered_06.png") center center no-repeat;
-    background-size: cover;
+    /*background: url("../img/Main-1170-Recovered_06.png") center center no-repeat;
+    background-size: cover;*/
+    background-color: #f8f8f8;
+    position: relative;
+    padding-bottom: 120px;
+}
+.news-section .polygon-4 {
+    position: absolute;
+    right: 5%;
+    top: 0;
+}
+.news-section .polygon-41 {
+    position: absolute;
+    left: 4%;
+    top: 15%;
+}
+.news-section .polygon-8 {
+     position: absolute;
+     left: 18%;
+     top: 60%;
+ }
+.news-section .polygon-42 {
+    position: absolute;
+    right: 18%;
+    bottom: 5%;
 }
 .news-section .name {
     border-bottom: 1px dashed black;
@@ -398,6 +421,7 @@ body {
 .question-section .panel-default {
     border-color: #eceef0;
     border-radius: 0;
+    margin-top: 50px;
 }
 .question-section .panel-default > .panel-heading {
     background-color: #fff;
@@ -415,10 +439,39 @@ body {
     position: relative;
 }
 .question-section {
-    padding-top: 120px;
     color: black;
-    background: url("../img/Main-1170-Recovered_06.png") center center no-repeat;
-    background-size: cover;
+    background-color: #f8f8f8;
+    position: relative;
+}
+.question-section .polygon-7 {
+    position: absolute;
+    left: 16%;
+    top: 20%;
+}
+.question-section .polygon-5 {
+    position: absolute;
+    right: 5%;
+    top: 30%;
+}
+.question-section .polygon-51 {
+    position: absolute;
+    left: 1%;
+    top: 50%;
+}
+.question-section .polygon-52 {
+    position: absolute;
+    right: 17%;
+    top: 60%;
+}
+.question-section .polygon-4 {
+    position: absolute;
+    left: 17%;
+    top: 70%;
+}
+.question-section .polygon-6 {
+    position: absolute;
+    left: 10%;
+    bottom: 0;
 }
 .question-section .panel-heading {
     padding: 0;
