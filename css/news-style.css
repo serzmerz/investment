@@ -96,3 +96,40 @@
 .wrap-pagination .pagination  > .active > a:hover {
     color: #2c3e50;
 }
+.wrap-news-items .one-news {
+    border-bottom: 1px solid #ced0d1;
+    display: block;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.wrap-another-news h4 {
+    font-size: 18px;
+    font-family: LatoBold;
+    margin-bottom: 20px;
+}
+.wrap-another-news .item span {
+    margin-right: 5px;
+    color: #728b9c;
+    font-size: 14px;
+}
+.wrap-another-news .item {
+    margin-bottom: 20px;
+}
+.wrap-repost {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ced0d1;
+    border-bottom: 1px solid #ced0d1;
+    margin-bottom: 50px;
+}
+.wrap-repost .align-right {
+    padding-top: 8px;
+    padding-bottom:8px;
+    text-align: right;
+}
+.wrap-repost .align-right i {
+    margin-left: 10px;
+}
+

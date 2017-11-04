@@ -680,6 +680,15 @@ body {
     .links a {
         text-align: left;
     }
+    .wrap-repost {
+        text-align: center;
+    }
+    .wrap-another-news .wrap-repost .align-right {
+        text-align: center;
+    }
+    .wrap-another-news {
+        text-align: center;
+    }
 }
 
 .login {
