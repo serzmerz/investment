@@ -32,6 +32,18 @@ $(document).ready(function(){
     $(".next-slide1").click(function(){
         $("#myCarousel1").carousel('next');
     });
+    $(".start-slide2").click(function(){
+        $("#myCarousel3").carousel('cycle');
+    });
+
+    // Осуществляет переход на предыдущий слайд
+    $(".prev-slide2").click(function(){
+        $("#myCarousel3").carousel('prev');
+    });
+    // Осуществляет переход на следующий слайд
+    $(".next-slide2").click(function(){
+        $("#myCarousel3").carousel('next');
+    });
     $('#accordion').on('shown.bs.collapse', function (e) {
         var elem = e.target.previousElementSibling.firstElementChild.lastElementChild.firstElementChild.firstElementChild;
         elem.className = 'flaticon-arrows';
