@@ -1,7 +1,8 @@
 $(document).ready(function(){
 
     $(".wrap-h h2").animated("fadeInUp", "fadeOutDown");
-    $(".about-section .container").animated("fadeIn", "fadeOut");
+    $(".about-section .circle-element").animated("fadeIn", "fadeOut");
+    $(".about-section .wrap-team-items").animated("fadeIn", "fadeOut");
     $(".wrap-text-block").animated("fadeIn", "fadeOut");
     $(".package-section .wrap-item").animated("fadeIn", "fadeOut");
     $("#left-news").animated("fadeIn", "fadeOut");

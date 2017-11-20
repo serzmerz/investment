@@ -1010,8 +1010,6 @@ body {
     }
 }
 .map-section {
-    border-top-left-radius: 50%;
-    border-top-right-radius: 50%;
     position: relative;
     height: 450px;
     overflow: hidden;
@@ -1019,6 +1017,10 @@ body {
     margin-left:-15%;
     }
 #map {
+    border-top-left-radius: 50%;
+    -webkit-border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    -webkit-border-top-right-radius: 50%;
     height: 100%;
     width: 100%;
     position:absolute;
