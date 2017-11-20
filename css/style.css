@@ -257,6 +257,7 @@ body {
     padding-top: 100px;
     background: url("../img/bg-2-1.png") center center no-repeat;
     background-size: cover;
+    position: relative;
 }
 .about-section p {
     margin-top: 50px;
@@ -1051,4 +1052,55 @@ body {
 }
 .wrap-logo {
     margin-top: -13px;
+}
+.about-section .light-6 {
+    position: absolute;
+    top: 5%;
+    left: 0;
+}
+.about-section .light-8 {
+    position: absolute;
+    top: 30%;
+    left: 40%;
+}
+.about-section .light-12 {
+    position: absolute;
+    top: 5%;
+    right: 0;
+}
+
+.about-section .light-10 {
+    position: absolute;
+    top: 72%;
+    right: 10%;
+}
+
+.feedback-section .polygon-6 {
+     position: absolute;
+     top: 0;
+     left: -8%;
+ }
+
+.feedback-section .polygon-12 {
+    position: absolute;
+    top: 40%;
+    left: 30%;
+}
+
+.feedback-section .polygon-13 {
+    position: absolute;
+    bottom: -10%;
+    left: -4%;
+}
+
+.feedback-section .polygon-121 {
+    position: absolute;
+    bottom: 0%;
+    right: 40%;
+}
+
+.feedback-section .polygon-131 {
+    position: absolute;
+    bottom: -25%;
+    right: 5%;
 }
