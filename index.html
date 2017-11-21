@@ -42,14 +42,14 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <button type="button" class="close" onclick="$('#login').modal('hide')" aria-hidden="true">&times;</button>
                     <h4>АВТОРИЗАЦИЯ</h4>
                     <p>Введите свои персональные данные</p>
                     <div class="wrap-input">
                         <input type="email" placeholder="Email">
                         <input type="text" placeholder="Пароль">
-                        <a href="#" data-toggle="modal" data-target="#remember-login" class="left">Забыли пароль?</a>
-                        <a href="#">Зарегистрироваться</a>
+                        <a href="#" class="left" onclick="$('#login').modal('hide'); $('#remember-login').modal('show');">Забыли пароль?</a>
+                        <a href="#" onclick="$('#login').modal('hide'); $('#register').modal('show');">Зарегистрироваться</a>
                     </div>
                     <a class="button btn-login">ВОЙТИ</a>
                 </div>
@@ -61,15 +61,15 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <button type="button" class="close" onclick="$('#register').modal('hide')" aria-hidden="true">&times;</button>
                     <h4>РЕГИСТРАЦИЯ</h4>
                     <p>Введите свои персональные данные</p>
                     <div class="wrap-input">
                         <input type="email" placeholder="Email">
                         <input type="text" placeholder="Пароль(Минимум 12 символов включая заглавные буквы)">
                         <input type="text" placeholder="Повторите пароль">
-                        <a href="#" data-toggle="modal" data-target="#remember-login" class="left">Забыли пароль?</a>
-                        <a href="#">Войти</a>
+                        <a href="#" class="left" onclick="$('#register').modal('hide');  $('#remember-login').modal('show');">Забыли пароль?</a>
+                        <a href="#" onclick="$('#register').modal('hide');  $('#login').modal('show');">Войти</a>
                     </div>
                     <a class="button btn-login">ЗАРЕГИСТРИРОВАТЬСЯ</a>
                 </div>
@@ -81,13 +81,13 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-body">
-                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                    <button type="button" class="close" onclick="$('#remember-login').modal('hide')" aria-hidden="true">&times;</button>
                     <h4>ВОСТАНОВЛЕНИЕ ПАРОЛЯ</h4>
                     <p>Пожалуйста введите вашу почту</p>
                     <div class="wrap-input">
                         <input type="email" placeholder="Email">
-                        <a href="#" class="left">Войти</a>
-                        <a href="#">Зарегистрироваться</a>
+                        <a href="#" class="left" onclick="$('#remember-login').modal('hide');  $('#login').modal('show');">Войти</a>
+                        <a href="#" onclick="$('#remember-login').modal('hide'); $('#register').modal('show');">Зарегистрироваться</a>
                     </div>
                     <a class="button btn-login">ОТПРАВИТЬ</a>
                 </div>
@@ -113,8 +113,8 @@
                             <a href="#faq" class="scrollto">Часто задаваемые вопросы</a>
                             <a href="#contact" class="scrollto">Контакты</a>
                             <a href="#" class="scrollto">Личный кабинет</a>
-                            <a href="#" class="hidden-lg">Вход</a>
-                            <a href="#" class="hidden-lg">Регистрация</a>
+                            <a href="#" data-toggle="modal" data-target="#login" class="hidden-lg">Вход</a>
+                            <a href="#" data-toggle="modal" data-target="#register" class="hidden-lg">Регистрация</a>
                             </div>
                         </div>
                     </div>
