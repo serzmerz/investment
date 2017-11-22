@@ -1104,3 +1104,5 @@ body {
     bottom: -25%;
     right: 5%;
 }
+
+body { padding-right: 0 !important }
