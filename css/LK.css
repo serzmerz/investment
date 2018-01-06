@@ -948,6 +948,25 @@ body {
     text-decoration: none;
 }
 
+.right-text-description {
+    position: absolute;
+    right: 0;
+    font-size: 16px;
+    bottom: 18px;
+    padding-right: 10px;
+    border-right: 1px solid #012d40;
+    text-decoration: none;
+    cursor: pointer;
+    color: #58bddd;
+}
+.right-text-description span {
+    padding-bottom: 2px;
+    border-bottom: 1px solid #58bddd;
+}
+.right-text-description:hover {
+    color: #58bddd;
+}
+
 @media (max-width: 1680px) {
     .wrap-content .more-info {
         float: none;
@@ -961,11 +980,19 @@ body {
 }
 
 @media (max-width: 1440px) {
+        .wrap-link-container {
+            padding-right: 15px;
+            padding-left: 15px;
+            margin-right: auto;
+            margin-left: auto;
+            width: auto;
+        }
         .nav-header-bell {
             display: inline-block;
         }
         .wrap-logo {
             text-align: center;
+            width: 100%;
         }
         .links.hidden {
             display: none !important;
