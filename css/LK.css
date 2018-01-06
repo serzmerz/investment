@@ -965,6 +965,7 @@ body {
 }
 .right-text-description:hover {
     color: #58bddd;
+    text-decoration: none;
 }
 
 @media (max-width: 1680px) {
