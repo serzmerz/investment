@@ -35,6 +35,16 @@ body {
 }
 .wrap-avatar p {
     margin-top: 10px;
+    margin-bottom: 0;
+}
+.wrap-avatar img {
+    border-radius: 50%;
+}
+.wrap-avatar a {
+    font-size: 13px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
 }
 .left-bar .sidebar-menu a {
     color: #fff;
@@ -1084,4 +1094,149 @@ body {
     }
 }
 
+.person-label {
+    font-size: 18px;
+    font-family: LatoBlack;
+    color: #001620;
+    margin-top: 40px;
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+.hello-label {
+    font-size: 18px;
+    font-family: LatoBlack;
+    color: #001620;
+    margin-bottom: 10px;
+}
+.wrap-person-information {
+    text-align: right;
+    padding-right: 20px;
+}
+.wrap-person-information input, .wrap-person-information textarea {
+    padding: 7px;
+    border: 1px solid #f0f0f0;
+    min-width: 300px;
+    font-size: 18px;
+}
+.wrap-person-information span {
+    padding: 7px 15px 7px 7px;
+    font-size: 16px;
+    color: #014d6f;
+    max-width: 150px;
+    display: inline-block;
+}
+.wrap-person-information div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+.wrap-person-information .btn-buy {
+    margin-top: 50px;
+    font-family: LatoBlack;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+.wrap-person-information .wrap-address {
+    margin-bottom: 0;
+}
+.wrap-address .street {
+    min-width: 160px;
+    width: 160px;
+    margin-right: 24px;
+}
 
+.wrap-address .house {
+    min-width: 50px;
+    width: 50px;
+}
+.wrap-person-information .wrap-comment {
+    align-items: flex-start;
+}
+.wrap-comment textarea {
+    height: 130px;
+}
+
+@media (max-width: 1625px) {
+    .wrap-person-information {
+        padding-right: 0;
+        padding-left: 20px;
+    }
+    .wrap-person-information div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .wrap-person-information span {
+        max-width: 100%;
+    }
+    .wrap-person-information .wrap-address {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .wrap-person-information .wrap-comment {
+        align-items: flex-start;
+    }
+}
+@media (max-width: 1200px) {
+    .wrap-person-information {
+        padding-right: 20px;
+        padding-left: 0;
+    }
+    .wrap-person-information div {
+        flex-direction: row;
+        align-items: center;
+    }
+    .wrap-person-information span {
+        max-width: 150px;
+    }
+    .wrap-person-information input {
+        width: 400px;
+    }
+    .wrap-person-information .wrap-address {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    .wrap-address .street {
+        width: 220px;
+    }
+    .wrap-address .house {
+        width: 90px;
+    }
+    .wrap-person-information .wrap-comment {
+        align-items: flex-start;
+    }
+    .wrap-person-information textarea {
+        width: 400px;
+    }
+    .wrap-content {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 645px) {
+    .wrap-person-information {
+        padding-right: 0;
+        padding-left: 20px;
+    }
+    .wrap-person-information div {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .wrap-person-information span {
+        max-width: 100%;
+    }
+    .wrap-person-information .wrap-address {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    .wrap-person-information .wrap-comment {
+        align-items: flex-start;
+    }
+    .wrap-person-information input, .wrap-person-information textarea  {
+        width: 100%;
+        min-width: 100%;
+    }
+    .nav-header-bell {
+        margin-right: 10px;
+    }
+}
