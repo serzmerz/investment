@@ -13,6 +13,10 @@
 
 /*Иконка меню---------------*/
 
+.modal-open {
+    overflow: auto;
+}
+
 .toggle_mnu {
     display: none;
     background: none;
@@ -190,7 +194,6 @@ body {
 }
 .links a:hover {
     color: white;
-    font-weight: 600;
     transition: color 0.2s linear;
 }
 
