@@ -262,10 +262,15 @@ body {
     background-size: cover;
     position: relative;
 }
+.about-section iframe {
+    margin-top: 35px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
 .about-section p {
-    margin-top: 50px;
     font-size: 16px;
-    line-height: 2.8em;
+    line-height: 1.5em;
+    font-family: LatoBold;
+    margin-top: 30px;
 }
 
 .package-section {
@@ -274,8 +279,12 @@ body {
     background: url("../img/bg-3-1.png") center bottom no-repeat;
     background-size: cover;
 }
+.products-section {
+    padding-top: 80px;
+    text-align: center;
+}
 
-.package-section .wrap-item {
+.package-section .wrap-item, .products-section .wrap-item {
     background-color: #ffffff;
     color: black;
     border-radius: 10px;
@@ -340,7 +349,7 @@ body {
 .package-section .wrap-h {
     margin-bottom: 50px;
 }
-.news-section .wrap-h h2, .question-section .wrap-h h2, .feedback-section .wrap-h h2 {
+.news-section .wrap-h h2, .question-section .wrap-h h2, .feedback-section .wrap-h h2, .products-section .wrap-h h2 {
     color: black;
     margin-top: 0;
 }
