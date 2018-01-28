@@ -280,17 +280,28 @@ body {
     background-size: cover;
 }
 .products-section {
+    position: relative;
     padding-top: 80px;
     text-align: center;
 }
 
-.package-section .wrap-item, .products-section .wrap-item {
+.package-section .wrap-item {
     background-color: #ffffff;
     color: black;
     border-radius: 10px;
     box-shadow: 0 7px 20px rgba(0,0,0,0.5);
     padding: 25px;
     margin-bottom: 50px;
+}
+.products-section .wrap-item {
+    background-color: #ffffff;
+    color: black;
+    border-radius: 10px;
+    box-shadow: 0 7px 20px rgba(0,0,0,0.5);
+    margin-bottom: 50px;
+}
+.products-section .card-content {
+    padding: 25px;
 }
 .package-section .price {
     background-color: #03ffde;
@@ -312,15 +323,53 @@ body {
     font-size: 16px;
 }
 
-.package-section .name {
+.package-section .name, .products-section .name {
     font-family: LatoBlack;
     font-size: 18px;
     line-height: 1.3em;
 }
 
+.products-section .card-price-title {
+    margin-top: 40px;
+    font-family: LatoBlack;
+    font-size: 18px;
+    margin-bottom: 0;
+}
+.products-section .card-price {
+    margin-top: 0;
+    font-family: LatoBlack;
+    font-size: 36px;
+}
+.products-section .property .top-phrase, .products-section .property .bottom-phrase {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.products-section .wrap-property {
+    margin-top: 20px;
+}
+
+.wrap-item img {
+    width: 100%;
+}
+
+.wrap-products {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.products-section .name {
+    min-height: 50px;
+}
+
 .package-section .wrap-property {
     margin-top: 30px;
     margin-bottom: 30px;
+}
+.products-section .wrap-property {
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .property .top-phrase {
@@ -354,7 +403,6 @@ body {
     margin-top: 0;
 }
 .news-section {
-    padding-top: 70px;
     color: black;
     /*background: url("../img/Main-1170-Recovered_06.png") center center no-repeat;
     background-size: cover;*/
@@ -485,6 +533,31 @@ body {
     position: absolute;
     left: 10%;
     bottom: 0;
+}
+.products-section .polygon-6 {
+    position: absolute;
+    left: 16%;
+    top: 20%;
+}
+.products-section .polygon-12 {
+    position: absolute;
+    right: 5%;
+    top: 30%;
+}
+.products-section .polygon-13 {
+    position: absolute;
+    left: 1%;
+    top: 50%;
+}
+.products-section .polygon-121 {
+    position: absolute;
+    right: 17%;
+    top: 60%;
+}
+.products-section .polygon-131 {
+    position: absolute;
+    left: 17%;
+    top: 70%;
 }
 .question-section .panel-heading {
     padding: 0;
@@ -1118,3 +1191,35 @@ body {
 }
 
 body { padding-right: 0 !important }
+
+.wrap-pagination {
+    padding-top: 15px;
+    text-align: right;
+}
+.wrap-pagination .pagination > li > a {
+    border: none;
+    color: #939393;
+    font-size: 18px;
+    background-color: transparent;
+    padding: 3px 10px;
+}
+.wrap-pagination .pagination > li:first-child > a, .wrap-pagination .pagination > li:last-child > a {
+    color: #001620;
+    font-family: LatoBold;
+    font-size: 18px;
+}
+.wrap-pagination .pagination  > .active > a {
+    background-color: transparent;
+    border: 1px solid #001620;
+    margin-left: 2px;
+    margin-right: 2px;
+    color: #001620;
+}
+.wrap-pagination .pagination  > .active > a:hover {
+    color: #2c3e50;
+}
+@media (max-width: 768px) {
+    .wrap-pagination {
+        text-align: center;
+    }
+}
