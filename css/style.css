@@ -258,7 +258,13 @@ body {
 
 .about-section {
     padding-top: 100px;
-    background: url("../img/bg-2-1.png") center center no-repeat;
+    background: url("../img/Main-1170-(New)_02.png") center center no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.team-section {
+    background: url("../img/Main-1170-(New)_03.png") center center no-repeat;
+    padding-bottom: 80px;
     background-size: cover;
     position: relative;
 }
@@ -274,9 +280,9 @@ body {
 }
 
 .package-section {
-    padding-top: 130px;
+    position: relative;
     text-align: center;
-    background: url("../img/bg-3-1.png") center bottom no-repeat;
+    background: url("../img/Main-1170-(New)_04.png") center top no-repeat;
     background-size: cover;
 }
 .products-section {
@@ -1140,18 +1146,18 @@ body {
 }
 .about-section .light-6 {
     position: absolute;
-    top: 5%;
+    bottom: 5%;
     left: 0;
 }
 .about-section .light-8 {
     position: absolute;
     top: 30%;
-    left: 40%;
+    right: 30%;
 }
 .about-section .light-12 {
     position: absolute;
     top: 5%;
-    right: 0;
+    right: -2%;
 }
 
 .about-section .light-10 {
@@ -1159,6 +1165,42 @@ body {
     top: 72%;
     right: 10%;
 }
+.team-section .light-team {
+    position: absolute;
+    top: -10%;
+    right: 10%;
+}
+.package-section .light-team-9 {
+    position: absolute;
+    top: -4%;
+    left: 10%;
+}
+.polygon-package-1 {
+    position: absolute;
+    top: 15%;
+    left: 0;
+}
+.polygon-package-2 {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+}
+.polygon-package-3 {
+    position: absolute;
+    bottom: -15%;
+    left: -15%;
+}
+.polygon-package-5 {
+    position: absolute;
+    top: 40%;
+    right: -3%;
+}
+.polygon-package-6 {
+    position: absolute;
+    bottom: 5%;
+    right: 8%;
+}
+
 
 .feedback-section .polygon-6 {
      position: absolute;
