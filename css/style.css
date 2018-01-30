@@ -1232,36 +1232,42 @@ body {
     right: 5%;
 }
 
+.round {
+    position: absolute;
+    top: 18%;
+    left: 13%;
+}
+
 body { padding-right: 0 !important }
 
-.wrap-pagination {
+.wrap-products .wrap-pagination {
     padding-top: 15px;
     text-align: right;
 }
-.wrap-pagination .pagination > li > a {
+.wrap-products .wrap-pagination .pagination > li > a {
     border: none;
     color: #939393;
     font-size: 18px;
     background-color: transparent;
     padding: 3px 10px;
 }
-.wrap-pagination .pagination > li:first-child > a, .wrap-pagination .pagination > li:last-child > a {
+.wrap-products .wrap-pagination .pagination > li:first-child > a, .wrap-products .wrap-pagination .pagination > li:last-child > a {
     color: #001620;
     font-family: LatoBold;
     font-size: 18px;
 }
-.wrap-pagination .pagination  > .active > a {
+.wrap-products .wrap-pagination .pagination  > .active > a {
     background-color: transparent;
     border: 1px solid #001620;
     margin-left: 2px;
     margin-right: 2px;
     color: #001620;
 }
-.wrap-pagination .pagination  > .active > a:hover {
+.wrap-products .wrap-pagination .pagination  > .active > a:hover {
     color: #2c3e50;
 }
 @media (max-width: 768px) {
-    .wrap-pagination {
+    .wrap-products .wrap-pagination {
         text-align: center;
     }
 }
