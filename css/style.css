@@ -1270,4 +1270,10 @@ body { padding-right: 0 !important }
     .wrap-products .wrap-pagination {
         text-align: center;
     }
+    .products-section .card-price {
+        font-size: 28px;
+    }
+    .products-section .wrap-property {
+        height: auto;
+    }
 }
