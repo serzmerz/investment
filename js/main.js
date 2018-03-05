@@ -15,6 +15,7 @@ $(document).ready(function(){
     });
 
     $(".wrap-h h2").animated("fadeInUp", "fadeOutDown");
+    $(".wrap-h-feedback h2").animated("fadeInUp", "fadeOutDown");
     $(".about-section .circle-element").animated("fadeIn", "fadeOut");
     $(".about-section .wrap-team-items").animated("fadeIn", "fadeOut");
     $(".wrap-text-block").animated("fadeIn", "fadeOut");
