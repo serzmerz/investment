@@ -120,7 +120,7 @@ body {
     color: #017b9b;
     cursor: pointer;
 }
-.nav-header input {
+.nav-header .search-field {
     border-radius: 25px;
     background-color: #001C26;
     border: none;
@@ -132,6 +132,11 @@ body {
     font-size: 14px;
     color: #017b9b;
 }
+.nav-header .search-submit {
+    opacity: 0;
+    margin-left: -22px;
+}
+
 .nav-header .wrap-link {
     display: inline-block;
     float: right;
@@ -355,6 +360,10 @@ body {
     margin-top: 20px;
 }
 
+.wrap-item .wrap-img {
+    height: 200px;
+    overflow: hidden;
+}
 .wrap-item img {
     width: 100%;
 }
@@ -468,6 +477,17 @@ body {
 .news-section .carousel-inner {
     height: 180px;
     text-overflow: ellipsis;
+    overflow:hidden;
+}
+.news-section .carousel-inner:before {
+    content: "";
+    height:30px;
+    display: block;
+    width: 100%;
+    position:absolute;
+    bottom: 0;
+    z-index: 99999;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #f8f8f8);
 }
 .news-section .wrap-title .title {
     font-size: 16px;
@@ -1301,4 +1321,74 @@ body { padding-right: 0 !important }
     .products-section .wrap-property {
         height: auto;
     }
+}
+
+.jcarousel-wrapper {
+    position: relative;
+    margin-top: 40px;
+}
+
+/** Carousel **/
+
+.jcarousel {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.jcarousel .wrap-products {
+    width: 10000em;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.jcarousel .wrap-products div {
+    box-sizing: border-box;
+}
+
+.jcarousel img {
+    display: block;
+    max-width: 100%;
+    height: auto !important;
+}
+
+/** Carousel Controls **/
+
+.jcarousel-control-prev,
+.jcarousel-control-next {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    text-decoration: none;
+    text-shadow: 0 0 1px #000;
+}
+
+.jcarousel-control-prev,
+.jcarousel-control-next:hover {
+    text-decoration: none;
+    color: #eee;
+}
+
+.jcarousel-control-prev,
+.jcarousel-control-next:visited {
+    text-decoration: none;
+    color: #eee;
+}
+
+.jcarousel-control-prev,
+.jcarousel-control-next:link {
+    text-decoration: none;
+    color: #eee;
+}
+
+.jcarousel-control-prev {
+    left: -5px;
+}
+
+.jcarousel-control-next {
+    right: 25px;
 }
