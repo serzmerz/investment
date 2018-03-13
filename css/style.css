@@ -1392,3 +1392,36 @@ body { padding-right: 0 !important }
 .jcarousel-control-next {
     right: 25px;
 }
+
+.not-found-section {
+    height: 100vh;
+    min-height: 560px;
+    background: url("../img/404.png") center bottom no-repeat;
+    background-size: cover;
+}
+.not-found-section .wrap-text-block {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-duration: 3s;
+}
+
+.not-found-section .links a {
+    text-decoration: none;
+}
+
+.not-found-section .wrap-text {
+    text-align: center;
+    color: white;
+}
+
+.not-found-section .wrap-text h1 {
+    font-size: 150px;
+}
+
+.not-found-section .wrap-text span {
+    margin-top: 20px;
+    color: #fff;
+    display: block;
+}
